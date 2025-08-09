@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to your CribzConnect account to access premium real estate listings and connect with property owners.">
+    <title>Sign In - CribzConnect</title>
+
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CribzConnect">
+    <meta property="og:title" content="Sign In - CribzConnect">
+    <meta property="og:description" content="Sign in to your CribzConnect account to access premium real estate listings and connect with property owners.">
+    <meta property="og:image" content="https://framerusercontent.com/images/UqOsTf2fg8m2klyk3d5avQLamo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="CribzConnect - Premium Real Estate Platform">
+    <meta property="og:url" content="https://cribzconnect.com/login">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CribzConnect">
+    <meta name="twitter:title" content="Sign In - CribzConnect">
+    <meta name="twitter:description" content="Sign in to your CribzConnect account to access premium real estate listings and connect with property owners.">
+    <meta name="twitter:image" content="https://framerusercontent.com/images/UqOsTf2fg8m2klyk3d5avQLamo.png">
+    <meta name="twitter:image:alt" content="CribzConnect - Premium Real Estate Platform">
+    
+    <!-- WhatsApp specific -->
+    <meta property="og:image:type" content="image/png">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="auth-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-wrapper">
+            <div class="brand-section">
+                <div class="brand-content">
+                    <h1 class="brand-title">CribzConnect</h1>
+                    <p class="brand-subtitle">Your gateway to premium real estate experiences</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-home"></i>
+                            <span>Premium Properties</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-search"></i>
+                            <span>Smart Search</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Transactions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2 id="form-title">Welcome Back</h2>
+                        <p id="form-subtitle">Sign in to your account to continue</p>
+                    </div>
+
+                    <!-- Login Form -->
+                    <form id="login-form" class="auth-form active">
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope input-icon"></i>
+                                <input type="email" id="login-email" placeholder="Email address" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-lock input-icon"></i>
+                                <input type="password" id="login-password" placeholder="Password" required>
+                                <button type="button" class="password-toggle" onclick="togglePassword('login-password')">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="checkbox-wrapper">
+                                <input type="checkbox" id="remember-me">
+                                <span class="checkmark"></span>
+                                Remember me
+                            </label>
+                            <a href="#" class="forgot-link">Forgot password?</a>
+                        </div>
+
+                        <button type="submit" class="auth-btn primary">
+                            <span>Sign In</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <div class="form-switch">
+                        <p id="switch-text">Don't have an account? <a href="register.html" class="switch-link">Sign up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <script src="auth-script.js"></script>
+</body>
+</html>
